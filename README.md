@@ -16,8 +16,8 @@ UbuntuScholar is a platform that connects students facing financial difficulties
 
 ## Technology Stack
 
-- **Frontend:** HTML, CSS, Bootstrap
-- **Backend:** WordPress (with potential migration to dedicated crowdfunding platform)
+- **CMS:** Django CMS
+- **Database:** (To be determined based on hosting platform)
 - **Payment Processing:** (To be determined based on chosen payment gateway)
 
 ## Getting Started
