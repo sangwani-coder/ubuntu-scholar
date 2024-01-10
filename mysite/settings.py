@@ -206,6 +206,9 @@ CMS_TEMPLATES = (
     ("contact.html", ('MyContact')),
     ("index.html", ('MyIndex')),
     ("about.html", ('MyAbout')),
+    ("campaigns.html", ('Campaigns')),
+    ("campaign-details.html", ('CampaignDetails')),
+    ("donors.html", ('Donors')),
 )
 
 # Enable permissions
