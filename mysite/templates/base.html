@@ -22,9 +22,14 @@
     <!-- Vendor CSS files -->
     <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
     <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"
-        href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"
+        href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet"
         href="https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-5/assets/css/contact-5.css">
 
@@ -35,27 +40,25 @@
 </head>
 
 <body>
-    {% cms_toolbar %}
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><span class="brand-title">UbuntuScholar</span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
+    <!-- {% cms_toolbar %} -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <h6 class=""><ahref="#"><span class="brand-title">UbuntuScholar</span></a></h6>
+            <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
                     {% show_menu 0 100 100 100%}
                 </ul>
-                <!-- <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Admin Login</a></li>
-                </ul> -->
-            </div>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="" class="get-started-btn">Donate</a>
+
         </div>
-    </nav>
+    </header><!-- End Header -->
     {% block content %}
 
     {% placeholder 'Content' %}
@@ -96,15 +99,20 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Student Resources</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Scholarship & Grant Information:</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Literacy & Budgeting Tools</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Career Guidance & Skills Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Mental Health & Wellbeing Support</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Study Skills & Time Management Tips</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Scholarship & Grant Information:</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Literacy & Budgeting Tools</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Career Guidance & Skills Development</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Mental Health & Wellbeing Support</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Study Skills & Time Management Tips</a>
+                            </li>
                         </ul>
                     </div>
 
