@@ -1,3 +1,14 @@
+/* -------------------------------------------------------------
+# iFrame
+-------------------------------------------------------------- */
+iframe {
+  border: 1px solid black;
+  width: 400px;
+  height: 300px; /* takes precedence over the width set with the HTML width attribute */
+  display: none;
+  border-radius: 20px;
+}
+
 /*--------------------------------------------------------------
 # Branding
 --------------------------------------------------------------*/

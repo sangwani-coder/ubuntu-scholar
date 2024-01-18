@@ -134,3 +134,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+function openForm() {
+  document.getElementById("lipilaForm").style.display = "inline-block";
+  document.getElementById("lipilaOpen").style.display = "none";
+  document.getElementById("lipilaClose").style.display = "block";
+  document.getElementById("story").style.opacity = 0.2;
+}
+
+function closeForm() {
+  document.getElementById("lipilaForm").style.display = "none";
+  document.getElementById("lipilaClose").style.display = "none";
+  document.getElementById("lipilaOpen").style.display = "block";
+  document.getElementById("story").style.opacity = 1;
+}

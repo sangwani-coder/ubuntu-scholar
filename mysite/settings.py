@@ -210,6 +210,7 @@ CMS_TEMPLATES = (
     ("campaign-details.html", ('CampaignDetails')),
     ("donors.html", ('Donors')),
     ("stories.html", ('Stories')),
+    ("create_campaign.html", ('createCampaign')),
 )
 
 # Enable permissions
